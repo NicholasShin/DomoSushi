@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Domo Sushi Gig Harbor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">DOMO SUSHI</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header text-center">
+        <h1>Contact & Location</h1>
+        <p>Visit us in Gig Harbor or place your pick-up order over the phone.</p>
+    </section>
+
+    <main class="container contact-container">
+        <div class="contact-card info-card">
+            <h2>Restaurant Info</h2>
+            <div class="info-group">
+                <h3>📍 Location</h3>
+                <p>Gig Harbor, WA</p>
+            </div>
+            <div class="info-group">
+                <h3>📞 Phone Orders</h3>
+                <p><a href="tel:2530000000" class="phone-link">(253) XXX-XXXX</a></p>
+                <small>*Call directly for pickup orders.</small>
+            </div>
+            <div class="info-group">
+                <h3>🕒 Business Hours</h3>
+                <p>Mon - Sat: 11:30 AM - 9:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+
+        <div class="contact-card form-card">
+            <h2>Send a Message</h2>
+            <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required placeholder="Questions or catering requests?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Domo Sushi</h3>
+                <p>Gig Harbor, WA</p>
+                <p>Phone: (253) 851-0592</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Mon - Sat: 11:00 AM - 9:00 PM</p>
+                <p>Sunday: 4:00 PM - 9:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Domo Sushi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
